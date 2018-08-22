@@ -31,20 +31,16 @@ var data = [
 	},
 ];
 
-/*var idOne = data[0].id;
-var addClass = data[0].categories;
-
-var element = document.getElementById('box1');
-    element.classList.add(data[0].categories);*/
-
 var boxes =	document.getElementById('box');
 var el; 
+var para;
 for (var i=0; i < data.length; i++) {
 	
 	
 	//cat.replace(/,/g," ");
 
 	el = document.createElement('div');
+	para = document.createElement('div');
 	el.setAttribute('id', data[i].id);
 
 	var header = document.createElement('h1');
@@ -55,7 +51,7 @@ for (var i=0; i < data.length; i++) {
 	
 	
 	
-	para = document.createTextNode(data[i].content);	
+	para.innerHTML = (data[i].content);	
 	
 	el.appendChild(para);
 
