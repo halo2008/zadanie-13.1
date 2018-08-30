@@ -49,13 +49,17 @@ for (var i=0; i < data.length; i++) {
 	el.appendChild(header);
 	boxes.appendChild(el);	
 	
-	
-	
-	para.innerHTML = (data[i].content);	
+	para.innerHTML = data[i].content;	
 	
 	el.appendChild(para);
 
-	var cat = (data[i].categories).join("");
-	el.classList.add(cat);
+	if (data[i].categories.length < 1 || data[i].categories.length == undefined ) {
+		
+	}
+
+	else {
+		var cat = (data[i].categories).join(" ");
+		el.classList.add(cat);		
+	}
 
 }
