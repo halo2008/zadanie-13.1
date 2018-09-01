@@ -59,7 +59,7 @@ for (var i=0; i < data.length; i++) {
 
 	else {
 		var cat = (data[i].categories).join(" ");
-		el.classList.add(cat);		
+		el.className = cat;
 	}
 
 }
