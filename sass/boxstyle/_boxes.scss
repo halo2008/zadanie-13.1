@@ -8,6 +8,7 @@
 	border-radius: 5px;
 	border: 2px solid black;
 	margin: 20px;
+	opacity: .7;
 }
 
 #box {
@@ -16,5 +17,15 @@
 }
 
 .highlighted {
-	background-color: red;
+	background-color: #8ab2f2;
+}
+
+.special-header {
+	h1 {
+		color: #5ce8cc;
+	}
+}
+
+.important {
+	opacity: 1 !important;
 }
